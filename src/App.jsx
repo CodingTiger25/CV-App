@@ -15,7 +15,8 @@ function App() {
     <>
       <div className='top-line-container'>
         
-
+      <h1>{firstName}</h1>
+      <input value={firstName} onChange={e => setFirstName(e.target.value)} placeholder=''></input>
             
 
       </div>  
