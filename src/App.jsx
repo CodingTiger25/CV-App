@@ -10,15 +10,26 @@ function App() {
   const [email,setEmail] = useState("");
   const [phoneNum, setPhoneNum] = useState("");
 
+  const [showEdit, setShowEdit] = useState(false);
+
+
 
   return (
     <>
       <div className='top-line-container'>
         
       <h1>{firstName}  {lastName}</h1>
-      <input value={firstName} onChange={e => setFirstName(e.target.value)} placeholder=''></input>
-      <input value={lastName} onChange={e => setLastName(e.target.value)} placeholder=''></input>
-            
+
+       
+
+          <button onClick={() => setShowEdit(!showEdit)}> Edit</button>
+          {showEdit && (
+          <div >
+            <input value={firstName} onChange={e => setFirstName(e.target.value)} placeholder=''></input>
+            <input value={lastName} onChange={e => setLastName(e.target.value)} placeholder=''></input>
+          </div>
+          )}
+        
 
       </div>  
       <h1>Resume</h1>

@@ -74,3 +74,13 @@ button:focus-visible {
   left:-40%;
   bottom: 75%;
 }
+
+.input-container{
+  display: flex;
+  gap: 10px;
+  display: block
+}
+
+#myEditName {
+  display: none;
+}
