@@ -13,26 +13,33 @@ function App() {
   const [showEdit, setShowEdit] = useState(false);
 
 
+  const handleNameClick = () => {
+    setShowEdit(false);
+
+  }
+
 
   return (
-    <>
-      <div className='top-line-container'>
-        
-      <h1>{firstName}  {lastName}</h1>
-
-       
-
+    <> 
+    
+    <div className='name-container'>
+        <h1>{firstName}  {lastName}</h1>      
+    </div>
+      <div className='top-line-container'> </div>
+      <div className='edit-container'>
           <button onClick={() => setShowEdit(!showEdit)}> Edit</button>
           {showEdit && (
           <div >
-            <input value={firstName} onChange={e => setFirstName(e.target.value)} placeholder=''></input>
-            <input value={lastName} onChange={e => setLastName(e.target.value)} placeholder=''></input>
+            <input value={firstName} onChange={e => setFirstName(e.target.value)} 
+            placeholder=''></input>
+            <input value={lastName} onChange={e => setLastName(e.target.value)} 
+            placeholder=''></input>
+            <button onClick={() => setShowEdit(handleNameClick)}>Submit</button>
           </div>
           )}
-        
-
-      </div>  
-      <h1>Resume</h1>
+      </div>
+     
+      
       
     </>
   )
