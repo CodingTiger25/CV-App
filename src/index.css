@@ -82,8 +82,8 @@ button:focus-visible {
 
 .name-container{
   text-align: center;
-  position: absolute;
-  top: 5%;
+  position: relative;
+  top: -400px;
 }
 .edit-container{
   text-align: left;
@@ -94,8 +94,38 @@ button:focus-visible {
   left: 3%;
 }
 
+.emailF{
+  position: relative;
+  right: 890px;
+  top: -350px;
+}
 
+.phoneN{
+  position: relative;
+  left: 890px;
+  top: -380px;
+}
 
-#myEditName {
-  display: none;
+.EdEx{
+  position: relative;
+  top: -220px;
+  text-align: center;
+}
+
+.schoolInfo{
+  position: relative;
+  top: 450px;
+  left: 10px;
+}
+
+.uniInfo{
+  position: relative;
+  left: -950px;
+  top: -150px;
+}
+
+.studyDate{
+  position: relative;
+  left: 950px;
+  top: -200px;
 }
