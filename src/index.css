@@ -75,6 +75,14 @@ button:focus-visible {
   bottom: 75%;
 }
 
+.bottom-line-container{
+  border-top: 5px solid;
+  position: absolute;
+  width: 200vw; 
+  left:-40%;
+  top: 70%;
+}
+
 .input-container{
   position: relative;
   bottom: 95%;
@@ -128,4 +136,10 @@ button:focus-visible {
   position: relative;
   left: 950px;
   top: -200px;
+}
+
+.companyInfo{
+  position: relative;
+  top: 800px;
+  left: 10px;
 }

@@ -69,8 +69,14 @@ function App() {
                 <label>Date of Study:</label>
                 <input value={dateOfStudy} input type="date" onChange={e => setDateOfStudy(e.target.value)} 
                 placeholder=''></input>
-              </div>
-              
+              </div>              
+            </div>
+
+            <div className='companyInfo'>
+              <label>Company Name:</label>
+              <input value={"Company Name"} onChange={e => setSchoolName(e.target.value)} 
+              placeholder=''></input>
+
             </div>
 
             <button onClick={() => setShowEdit(handleNameClick)}>Submit</button>
@@ -90,6 +96,12 @@ function App() {
         </div>
         
         <p className='studyDate'>{dateOfStudy}</p>
+      </div>
+
+      <div className='bottom-line-container'> </div>
+
+      <div>
+        <h1 className='PrEx'>Practical Experience</h1>
       </div>
      
       
